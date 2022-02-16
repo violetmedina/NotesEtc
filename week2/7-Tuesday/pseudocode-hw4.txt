@@ -1,0 +1,39 @@
+
+
+PHONEBOOK
+This program will allow the user to manage a phone book contact.
+
+SET empty dictionary for name(key) and phone number(value)
+
+READ pickle file to dictionary
+
+PRINT selection list to user
+GET selection from user
+
+WHILE selection is not 5 exit
+    IF selection is 1. Look Up an Entry THEN
+        PRINT prompt for user to enter a name
+        GET name entered by user
+        SEARCH dictionary for name and get result
+        PRINT name and phone number
+    IF selection is 2. Add an Entry THEN
+        PRINT prompt for user to enter a name
+        GET name entered by user
+        PRINT prompt for user to enter a phone number
+        SEND name and phone number to dictionary
+    IF selection is 3. Delete an Entry THEN
+        PRINT prompt for user to enter a name
+        GET name entered by user
+        SEARCH dictionary for name
+        DELETE key Entry
+    IF selection is 4. List all entries THEN
+        FOR
+        PRINT dictionary entries
+        ENDFOR
+    IF selection is 5. Quit
+        SAVE to pickle file
+        EXIT 
+
+
+
+
