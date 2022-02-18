@@ -219,3 +219,47 @@ tesla.battery_life()
 # jadenSmith.override()
 
 # can still call method from parent with using super()
+
+
+# Inheritance vs composition
+
+class Student:
+
+    def __init__(self, first_name, city):
+        self.first_name = first_name
+        self.city = city
+
+    #functions(methods)
+    def printFirstName(self):
+        print(f"{self.first_name {self.city}}")
+
+
+student1 = Student("Dane", "Tampa")
+student2 = Student("Veronica", "Orlando")
+student3 = Student("Dez", "Atlanta")
+student4 = Student("Gary", "Atlanta")
+student5 = Student("Tri", "Philly")
+
+# composition
+class Campus:
+    def __init__(self):
+        self.students = [] # holds all of uor students
+
+    def addStudent(self, name, city):
+
+        #create instance of student
+        studentObj = Student(name, city)
+        self.students.append(studentObj)
+
+    def printStudentNames(self):
+
+        for student in self.students:
+            print(student.firstName)
+
+campus = Campus()
+
+campus.addStudent("Dane", "Tampa")
+campus.addStudent("Veronica", "Orlando")
+campus.addStudent("Dez", "Atlanta")
+campus.addStudent("Dane", "Tampa")
+campus.addStudent("Dane", "Tampa")
