@@ -1,0 +1,36 @@
+
+body{
+    margin: 0px;
+}
+
+/* .header{
+    height: 500px;
+    background-color: yellowgreen;
+    overflow: hidden;
+    position: relative;
+} */
+
+.imgContainer{
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+}
+
+.opacity{
+    height: 100%;
+    width: 100%;
+    opacity: 40%;
+    position: absolute;
+
+    z-index: 10;
+}
+
+.text{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+    size: 50px;
+    
+    z-index: 15;
+}
