@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+
+        .boxes{
+        
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 70%;
+
+            display: flex;
+            flex-direction: column;
+
+            height: 1500px;
+        }
+
+        .order1{
+            order:1;
+        }
+        .order3{
+            order:3;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- flex-start -->
+        <div class="boxes">
+            <div class="box order1">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box order1">4</div>
+            <div class="box">5</div>
+        </div> <!--End of boxes-->
+
+        <!-- flex-grow -->
+        <div class="boxes">
+            <div class="box fg1">1</div>
+            <div class="box fg1">2</div>
+            <div class="box fg2">3</div>
+            <div class="box fg1">4</div>
+            <div class="box fg1">5</div>
+        </div> <!--End of boxes-->
+
+        
+
+    </div>
+</body>
+</html>

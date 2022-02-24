@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+}
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(70, 67, 67);
+    color: white;
+    /* padding-right: 45px; */
+    padding: 0px 45px 0px 0px;
+    
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+    /* padding:35px; */
+}
+
+li:hover{
+    background-color: whitesmoke;
+    color: black;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding:35px;
+    display: inline-block;
+}
+
+a:hover{
+    /* text-decoration: underline; */
+    color: black;
+    text-decoration: underline;
+    
+}
+
+main{
+   
+    background-color: pink;
+
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.fg1{
+    flex-grow: 1;
+}
+
+.fg2{
+    flex-grow: 2;
+}
+
+.fg3{
+    flex-grow: 3;
+}
+
+.sidebar{
+    background-color: tomato;
+   
+}
+
+.mainContent{
+    background-color: purple;
+   
+}
+
+.ads{
+    background-color: navy;
+    
+}
