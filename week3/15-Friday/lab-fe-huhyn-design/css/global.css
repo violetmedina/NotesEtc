@@ -7,5 +7,81 @@ white = #FFFFFF */
 
 /* background colors */
 
+.bg-black{
+    background-color: black;
+}
+
+.bg-navy{
+    background-color: #14213D;
+}
+
+.bg-accent{
+    background-color: #FCA311;
+}
+
+.bg-lightGrey{
+    background-color: #e5e5e5;
+}
 
 /* font colors */
+
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+
+.text-navy{
+    color: #14213D;
+}
+
+.text-accent{
+    color: #FCA311;
+}
+
+.text-lightGrey{
+    color: #e5e5e5;
+}
+
+.text-white{
+    color: white;
+}
+
+/* anchor colors */
+
+.text-accent a{
+    color: #FCA311;
+}
+
+.text-accent a:hover{
+    color: #e5e5e5;
+}
+
+/* Page Sections */
+
+.ps-light{
+    background: white;
+    /* height: 550px; */
+    width: 100%;
+}
+
+.ps-grey{
+    background: #e5e5e5;
+    /* height: 550px; */
+    width: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://www.sunnysidecircus.com/wp-content/uploads/2019/03/Banh_Mi_Sandwich_fullwidth.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

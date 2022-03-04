@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <ul>
+    <li><img src="images/ylw.gif" alt="yellow" id="yellow"></li>
+    <li><img src="images/org.gif" alt="orange" id="orange"></li>
+    <li><img src="images/ppl.gif" alt="purple" id="purple"></li>
+    <li><img src="images/blu.gif" alt="blue" id="blue"></li>
+    <li><img src="images/pnk.gif" alt="pink" id="pink"  ></li>
+    <li><img src="images/grn.gif" alt="green" id="green"></li>
+    <li><img src="images/ygr.gif" alt="ygreen" id="ygreen"></li>
+    <li><img src="images/gry.gif" alt="gray" id="gray"></li>
+    <li><img src="images/red.gif" alt="red" id="red"></li>
+  </ul>
+  
+  <script>
+    // //retrieve DOM node
+    // pplNode = document.getElementById('purple')
+  
+    // //identify event
+
+    // pplNode.onclick = function(){
+    //   alert('clicked the purple button')
+    // }
+
+    //create a function ^^
+
+    let ulTag = document.querySelector('ul') // one single object
+
+    ulTag.addEventListener('click', function(e){ //e is an object that comes from browser window 
+      // console.log('I was clicked', Date.now());
+      console.log(e);
+      // console.log(e.target.id);
+
+      // alert(`you clicked on the ${e.target.id} button`)
+    })
+
+
+    
+
+  </script>
+
+</body>
+</html>

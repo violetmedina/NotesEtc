@@ -5,14 +5,35 @@ light gray - #E5E5E5
 white = #FFFFFF */
 
 
-/* Define Header class rules /*
+/* Define Header class rules */
 
+header{
+    width: 100%;
+    height: 550px;
+    background-color: pink;
+}
 
 /* positioning values */
 
 
-
 /* z-index */
 
+.z-10{
+    z-index: 10;
+}
+.z-15{
+    z-index: 15;
+}
+.z-20{
+    z-index: 20;
+}
+.z-25{
+    z-index: 25;
+}
 
-/* opacity */
+/* opacity -NOT NECESSARY WITH BOOTSTRAP 5 UNLESS YOU WANT MORE SPECIFIC VALUE */
+
+/* 
+.opacity{
+    opacity: .7;
+} */

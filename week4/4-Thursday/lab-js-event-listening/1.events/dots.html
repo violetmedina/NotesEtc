@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: beige;
+
+        }
+
+        .dot{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: purple;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <script>
+
+        let body = document.querySelector('body')
+
+        window.addEventListener('click', e=>{
+            console.log(e);
+            myDot = document.createElement('div')
+            myDot.style.left = (e.x - myDot.style.width/2).toString() + 'px'
+            myDot.style.top = (e.y - myDot.style.width/2).toString() + 'px'
+            myDot.className = 'dot'
+            body.appendChild(myDot)
+
+            // console.log(e.x, e.y);
+        })
+
+        //create a dom element
+        //attach .dot class to the element
+        //append it to the window
+    </script>
+</body>
+</html>
