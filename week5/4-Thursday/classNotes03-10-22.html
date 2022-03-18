@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    this is our page
+    <script>
+
+        let xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'https://jsonplaceholder.typicode.com/photos')
+
+        xhr.send()
+
+        xhr.onreadystatechange = ()=>{ //event listener to check status of data
+            if(xhr.readyState===4 && xhr.status === 200){
+                // where we have data
+
+                // console.log(xhr.responseText);  //convert string to a js object
+
+                let data = JSON.parse(xhr.responseText)
+                
+                console.log(data); // an array of objects [ {}, {}, {}]
+
+                let body = document.querySelector('body')
+
+                let htmlFragment = ""
+
+                data.forEach(obj => {
+                    
+                })
+            }
+        }
+
+    </script>
+</body>
+</html>

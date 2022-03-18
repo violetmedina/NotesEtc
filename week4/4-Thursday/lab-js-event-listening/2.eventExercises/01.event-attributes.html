@@ -33,7 +33,55 @@
       </form>
     </div>
     
+    <script>
+      let checkUsername = ()=>{
 
+        let username = document.getElementById('username')
+        let feedback = document.getElementById('feedback')
+
+        username.addEventListener('blur', e=>{
+          // console.log(e.target.value)
+          
+          let strLength = e.target.value.length;
+
+          if(strLength <= 10){
+
+            feedback.innerText = `your username is ${strLength} characters long and needs to be at least 10 characters long`;
+
+          }
+          else{
+
+            feedback.innerText = "";
+            
+          }
+        })
+      }
+
+      let checkPassword = ()=>{
+
+        let password = document.getElementById('password')
+        let feedback = document.getElementById('feedback')
+
+        username.addEventListener('blur', e=>{
+
+          let strLength = e.target.value.length;
+
+          if (strLength <= 10){
+            
+            feedback.innerText = `your password is ${strLength} characters long and needs to be at least 10 characters long`;
+
+          }else{
+
+            feedback.innerText = "";
+
+          }
+        })
+      }
+
+      checkUsername()
+      checkPassword()
+
+    </script>
     
   </body>
 </html>
