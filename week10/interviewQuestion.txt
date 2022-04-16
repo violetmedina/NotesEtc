@@ -1,0 +1,25 @@
+
+write a function that takes in an array and finds the maximum function in that array
+
+
+let nums = [56, 34, 23, 12, 89, 70, 56]
+
+function maxNums(nums) {
+    max = nums[0]
+    for(let i = 0; i < nums.length; i++){
+        if (max < nums[i]) {
+            max = nums[i]
+        }
+    }
+    return max;
+}
+
+maxNums(nums)
+
+
+
+**REVIEW**
+Ternary operators
+Practice writing anon functions from scratch
+Practice functions that write the reverse of a word
+Review sessions

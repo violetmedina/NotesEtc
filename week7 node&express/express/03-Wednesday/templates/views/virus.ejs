@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    this is virus data
+
+    <% data.forEach(virusObj => { %>
+
+        <h2><%= virusObj.state %></h2>
+
+        <ul>
+            <li>Positive Cases: <%= virusObj.positive %></li>
+            <li>Total Cases: <%= virusObj.total %></li>
+        </ul>
+     
+    <% }) %>
+</body>
+</html>
