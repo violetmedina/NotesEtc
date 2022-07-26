@@ -4,7 +4,7 @@ const express = require('express');
 //you will only have express once
 const app = express();
 
-//create a server 
+//create a server
 
 
 //inside of express, we have access to routes. Routes are able to handle the incoming URL and give us access to a callback function so that we can respond to our client.
@@ -19,7 +19,7 @@ app.get('/', (req,res)=>{
     res.send('<h1>howdy yall</h1>')
 })
 
-//how to take advantage of plural/singular -- regular expressionsions -- if we want the user to go to the same page if they type in cat or cats, use ?. See below
+//how to take advantage of plural/singular -- regular expressions -- if we want the user to go to the same page if they type in cat or cats, use ?. See below
 app.get('/cats?', (req, res)=>{
 
     res.send('cats')
@@ -45,7 +45,7 @@ app.get('/contact', (req, res)=>{
 
     //the above can be unpacked cleaner
     let{name,last} = req.query;
-    
+
     console.log(req.query);
 
     res.send(`<h1>${name} ${last}</h1>`)
@@ -87,7 +87,7 @@ app.get(`/add/:num1/:num2`, (req, res) => {
 let data = {data: [{
     id: 0,
     name: "Golden Retriever",
-    
+
     img: "https://www.gannett-cdn.com/presto/2020/02/07/USAT/4a2add44-2e03-41a8-ba02-722c8044d711-VPC_GOLDEN_RETRIEVER_TENNIS_BALLS_DESK_THUMB.jpg?quality=10"
 },
 {
@@ -125,7 +125,7 @@ app.get('/dogs', (req, res) => {
 
 //get to specific dogs
 app.get('/dogs/:id', (req, res) => {
-    let id = req.params.id; 
+    let id = req.params.id;
     let name = data.data[id].name;
     let img = data.data[id].img;
 
