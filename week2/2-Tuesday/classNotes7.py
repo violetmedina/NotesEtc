@@ -94,26 +94,26 @@ print(vehicle_title)
 # How do I access data in a list in a dictionary?
 # To access a specific list item inside a dictionary, first use the key name for the list. Then use the numerical index for the item in the list.
 
-=======
+# =======
 # TODO EXAMPLE
 
-import pickle 
+import pickle
 
 # data = {'name': 'Gary'}
 
 # writing to the pickle file
-# with open('data.pickle', 'wb') as fh: 
+# with open('data.pickle', 'wb') as fh:
 #     pickle.dump(data, fh)
 
-#reading from the pickle file 
+#reading from the pickle file
 
-# with open('data.pickle', 'rb') as fh: 
+# with open('data.pickle', 'rb') as fh:
 #     data = pickle.load(fh)
-    
-# print(data)
-    
 
-with open('todos.pickle', 'rb') as fh: 
+# print(data)
+
+
+with open('todos.pickle', 'rb') as fh:
     todos = pickle.load(fh)
 
 # todos = {
@@ -125,27 +125,27 @@ with open('todos.pickle', 'rb') as fh:
 
 
 def addTodo(priority, newTodoItem): # 1, high, 2 low
-    
-    # check priority level 
+
+    # check priority level
     if priority ==1: # high
         #insert item into list
         todos["high"].append(newTodoItem)
-        
+
     elif priority ==2 : # low
         #insert item into list
         todos["low"].append(newTodoItem)
-    
+
 
 getTask = True
 
 while getTask:
-    selection = int(input(f""" 
+    selection = int(input(f"""
 
-    1. add task 
-    2. delete task 
-    3. view all tasks 
-    
-                
+    1. add task
+    2. delete task
+    3. view all tasks
+
+
     """))
 
     priority = int(input(f'''
@@ -153,32 +153,32 @@ while getTask:
                         2. low priority
                         '''))
 
-    if selection == 1: # adding a task 
-    
+    if selection == 1: # adding a task
+
         task = input("Enter a new todo item")
         #adds data based priority to todos
         addTodo(priority, task)
-        
-    elif selection == 2: 
-        pass 
+
+    elif selection == 2:
+        pass
     elif selection == 3:
         if(priority == 1):
-            
+
             #todos["high"]  # ["mpo the floor", "feed the cat"]
-        
-            for todo in todos["high"]: 
+
+            for todo in todos["high"]:
                 print(todo)
         elif(priority == 2):
-            
+
             # todos["low"] # list
-                
-            for todo in todos["low"]: 
+
+            for todo in todos["low"]:
                 print(todo)
-    
+
     answer = input('Do you want to continue, y or n')
-    
+
     if answer == 'n':
         getTask = False
         #write todos to file
-        with open('todos.pickle', 'wb') as fh: 
+        with open('todos.pickle', 'wb') as fh:
             pickle.dump(todos, fh)
