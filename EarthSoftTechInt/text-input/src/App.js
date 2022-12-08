@@ -29,7 +29,7 @@ function App() {
                     let output = "Letter Count<br>";
                     for (let i = 0; i < counts.length; i++) {
                         let letter = String.fromCharCode(97 + i);
-                        output += `${letter}: ${counts[i]}<br \>`;
+                        output += `${letter}: ${counts[i]}<br>`;
                     }
                     document.getElementById("result").innerHTML = output;
                 }}>Submit Sentence</button>
