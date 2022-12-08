@@ -12,6 +12,10 @@ body {
   flex-direction: row;
 }
 
+div #result {
+text-align: left;
+}
+
 form {
   padding-top: 20px;
 }
