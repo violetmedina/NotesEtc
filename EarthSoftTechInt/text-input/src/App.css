@@ -1,13 +1,15 @@
 body {
-  background: #638AA4;
-  background: -moz-linear-gradient(left, #638AA4 0%, #0598CB 50%, #0A0975 100%);
-  background: -webkit-linear-gradient(left, #638AA4 0%, #0598CB 50%, #0A0975 100%);
-  background: linear-gradient(to right, #638AA4 0%, #0598CB 50%, #0A0975 100%);
+  background: #2798E2;
+  background: -moz-linear-gradient(left, #2798E2 0%, #2388CB 50%, #144E75 100%);
+  background: -webkit-linear-gradient(left, #2798E2 0%, #2388CB 50%, #144E75 100%);
+  background: linear-gradient(to right, #2798E2 0%, #2388CB 50%, #144E75 100%);
   text-align: center;
+  padding-bottom: 50px;
 }
 
-button {
+#button {
   display: flex;
+  flex-direction: row;
 }
 
 form {
