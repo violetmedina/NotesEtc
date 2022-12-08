@@ -1,0 +1,31 @@
+body {
+  background: #638AA4;
+  background: -moz-linear-gradient(left, #638AA4 0%, #0598CB 50%, #0A0975 100%);
+  background: -webkit-linear-gradient(left, #638AA4 0%, #0598CB 50%, #0A0975 100%);
+  background: linear-gradient(to right, #638AA4 0%, #0598CB 50%, #0A0975 100%);
+  text-align: center;
+}
+
+button {
+  display: flex;
+}
+
+form {
+  padding-top: 20px;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+#root {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+textarea {
+  min-width: 300px;
+}
